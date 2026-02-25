@@ -1,0 +1,9 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Config with secrets
+backend/config.py
+
+# Environment files (optional)
+.env
