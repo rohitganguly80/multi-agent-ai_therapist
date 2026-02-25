@@ -35,6 +35,8 @@ Screenshots / Demo
 
 SafeSpace Chat Interface:
 <img width="1917" height="865" alt="Screenshot 2026-02-26 005129" src="https://github.com/user-attachments/assets/8b0f7685-1f54-41c0-a0ca-bf604bd7337f" />
+<img width="1919" height="865" alt="Screenshot 2026-02-25 181238" src="https://github.com/user-attachments/assets/72a262bf-70e9-4538-859b-ca499c59acb4" />
+
 Twilio Call Log
 ![WhatsApp Image 2026-02-26 at 2 14 23 AM](https://github.com/user-attachments/assets/221a2b69-ca67-43b4-8a97-2e32b01c7dba)
 Note: Twilio calls are triggered only when serious keywords are detected (e.g., “I want to die”). These screenshots demonstrate the system functioning safely.
@@ -48,15 +50,21 @@ Packages (install via pip install -r requirements.txt)
 Setup Instructions
 
 Clone the repository
+
 Install dependencies
+
 Configure API keys in config.py:
-  GROQ_API_KEY = "your_groq_api_key_here"
-  TWILIO_ACCOUNT_SID = "your_twilio_sid"
-  TWILIO_AUTH_TOKEN = "your_twilio_auth_token"
-  TWILIO_FROM_NUMBER = "+1234567890"
-  EMERGENCY_CONTACT = "+919876543210"
+
+-GROQ_API_KEY = "your_groq_api_key_here"
+-TWILIO_ACCOUNT_SID = "your_twilio_sid"
+-TWILIO_AUTH_TOKEN = "your_twilio_auth_token"
+-TWILIO_FROM_NUMBER = "+1234567890"
+-EMERGENCY_CONTACT = "+919876543210"
+
 Run backend
+
 Run frontend
+
 Open your browser at http://localhost:8501 to start chatting.
 
 Usage
@@ -70,25 +78,26 @@ Usage
 -Serious messages trigger emergency calls via Twilio (safety feature).
 
 -You can ask for local therapist suggestions using natural language.
+
 Safety Notes
 
-SafeSpace is not a replacement for professional therapy.
+-SafeSpace is not a replacement for professional therapy.
 
-Emergency calls are triggered automatically for serious keywords.
+-Emergency calls are triggered automatically for serious keywords.
 
-Keep user data secure; conversations are stored locally by default.
+-Keep user data secure; conversations are stored locally by default.
 
-Always verify emergency handling before deploying publicly.
+-Always verify emergency handling before deploying publicly.
 
 Future Improvements
 
-Persistent user history (database storage)
+-Persistent user history (database storage)
 
-Sentiment analysis for more nuanced responses
+-Sentiment analysis for more nuanced responses
 
-Quick-reply suggestions for easier interaction
+-Quick-reply suggestions for easier interaction
 
-Real-time typing effect or streaming responses
+-Real-time typing effect or streaming responses
 
 Dynamic therapist search using free geolocation APIs
 
